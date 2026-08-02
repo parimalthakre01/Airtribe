@@ -12,8 +12,11 @@ class Solution:
         j = len(arr)-1
         while(i<j):
             self.swap(arr, i, j)
+            i += 1
+            j -= 1
         return arr
 
 
 obj = Solution()
-obj.reverseArray([1, 2, 3, 4, 5])
+ans = obj.reverseArray([1, 2, 3, 4, 5])
+print(ans)
